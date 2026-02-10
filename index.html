@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>JUANSE | Fusion Performer</title>
+
+<link rel="stylesheet" href="./css/style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<div id="intro"><h1>JS</h1></div>
+
+<header id="header">
+<div class="logo">JUANSE</div>
+
+<nav id="nav">
+<a href="#about" data-es="Sobre Mi" data-jp="紹介">Sobre</a>
+<a href="#gallery" data-es="Galería" data-jp="ギャラリー">Galería</a>
+<a href="#video" data-es="Video" data-jp="映像">Video</a>
+<a href="#contact" data-es="Contratar" data-jp="出演依頼">Contacto</a>
+</nav>
+
+<button id="langBtn">JP</button>
+<div class="menu-btn" onclick="toggleMenu()">☰</div>
+</header>
+
+<section class="hero">
+<video autoplay muted loop playsinline>
+<source src="img/hero.mp4" type="video/mp4">
+</video>
+
+<div class="overlay">
+<h1>Juan Sebastian Fernandez</h1>
+
+<p id="heroText"
+data-es="MALAMBO · FUSIÓN · ESCENA"
+data-jp="マランボ · フュージョン · ステージ">
+MALAMBO · FUSIÓN · ESCENA
+</p>
+
+<a href="https://wa.me/5493624652505?text=Hola%20quiero%20información%20sobre%20tu%20show"
+class="cta">BOOK</a>
+</div>
+</section>
+
+<section id="about" class="section reveal">
+<h2 data-es="SOBRE MÍ" data-jp="プロフィール">SOBRE MÍ</h2>
+<p data-es="Artista escénico argentino..." data-jp="アルゼンチン出身の舞台芸術家。">
+Artista escénico argentino...
+</p>
+</section>
+
+<section id="gallery" class="section reveal">
+<h2 data-es="GALERÍA" data-jp="ギャラリー">GALERÍA</h2>
+
+<div class="gallery">
+<img src="./img/boleadora1.jpg">
+<img src="./img/boleadora2.jpg">
+<img src="./img/boleadora3.jpg">
+<img src="./img/bombo1.jpg">
+<img src="./img/bombo2.jpg">
+<img src="./img/bombo3.jpg">
+<img src="./img/bombo4.jpg">
+<img src="./img/posemalambo.jpg">
+</div>
+</section>
+
+<section id="video" class="section reveal">
+<h2 data-es="VIDEO" data-jp="映像">VIDEO</h2>
+
+<iframe 
+src="https://www.youtube.com/embed/rIFrcPLaEk8"
+allowfullscreen>
+</iframe>
+</section>
+
+<section id="reels" class="section reveal">
+<h2 data-es="REELS" data-jp="リール">REELS</h2>
+
+<div class="reel-slider">
+
+<iframe 
+src="https://www.instagram.com/reel/DNyECOM5CFf/embed"
+loading="lazy">
+</iframe>
+
+<blockquote class="tiktok-embed"
+cite="https://www.tiktok.com/@juanse.fer8/video/7584087394291404039"
+data-video-id="7584087394291404039">
+<a href="https://www.tiktok.com/@juanse.fer8/video/7584087394291404039"></a>
+</blockquote>
+
+</div>
+</section>
+
+<section id="contact" class="section reveal">
+<h2 data-es="CONTACTO" data-jp="連絡先">CONTACTO</h2>
+
+<div class="social">
+<a href="https://www.instagram.com/juansebastian.fernandez.581/" target="_blank">
+<i class="fa-brands fa-instagram"></i>
+</a>
+
+<a href="https://www.tiktok.com/@juanse.fer8" target="_blank">
+<i class="fa-brands fa-tiktok"></i>
+</a>
+
+<a href="https://www.facebook.com/juansebastian.fernandez.581" target="_blank">
+<i class="fa-brands fa-facebook"></i>
+</a>
+</div>
+</section>
+
+<div class="cursor"></div>
+
+<div id="lightbox">
+<img id="lightbox-img">
+</div>
+
+<script src="./js/main.js"></script>
+<script async src="https://www.tiktok.com/embed.js"></script>
+
+</body>
+</html>
