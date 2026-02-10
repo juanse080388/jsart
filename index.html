@@ -13,6 +13,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 
 <body>
 
+<!-- INTRO -->
 <div id="intro"><h1>JS</h1></div>
 
 <header id="header">
@@ -29,6 +30,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 <div class="menu-btn" onclick="toggleMenu()">☰</div>
 </header>
 
+<!-- HERO -->
 <section class="hero">
 <video autoplay muted loop playsinline>
 <source src="img/hero.mp4" type="video/mp4">
@@ -50,8 +52,10 @@ class="cta">BOOK</a>
 
 <section id="about" class="section reveal">
 <h2 data-es="SOBRE MÍ" data-jp="プロフィール">SOBRE MÍ</h2>
-<p data-es="Artista escénico argentino..." data-jp="アルゼンチン出身の舞台芸術家。">
-Artista escénico argentino...
+
+<p data-es="Artista escénico argentino nacido en Resistencia..." 
+data-jp="アルゼンチン・チャコ州レシステンシア出身の舞台芸術家。">
+Artista escénico argentino nacido en Resistencia...
 </p>
 </section>
 
@@ -84,10 +88,7 @@ allowfullscreen>
 
 <div class="reel-slider">
 
-<iframe 
-src="https://www.instagram.com/reel/DNyECOM5CFf/embed"
-loading="lazy">
-</iframe>
+<iframe src="https://www.instagram.com/reel/DNyECOM5CFf/embed"></iframe>
 
 <blockquote class="tiktok-embed"
 cite="https://www.tiktok.com/@juanse.fer8/video/7584087394291404039"
@@ -116,11 +117,8 @@ data-video-id="7584087394291404039">
 </div>
 </section>
 
+<div id="lightbox"><img id="lightbox-img"></div>
 <div class="cursor"></div>
-
-<div id="lightbox">
-<img id="lightbox-img">
-</div>
 
 <script src="./js/main.js"></script>
 <script async src="https://www.tiktok.com/embed.js"></script>
