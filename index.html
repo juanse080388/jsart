@@ -6,31 +6,38 @@
 <title>JUANSE | Fusion Performer</title>
 
 <link rel="stylesheet" href="./css/style.css">
-
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-<!-- INTRO -->
-<div id="intro"><h1>JS</h1></div>
+<div id="intro">
+  <img src="./img/JS.png" alt="JS Logo">
+</div>
 
 <header id="header">
-<div class="logo">JUANSE</div>
+
+<div class="logo">
+<img src="./img/JS.png" alt="JS Logo">
+</div>
 
 <nav id="nav">
-<a href="#about" data-es="Sobre Mi" data-jp="紹介">Sobre</a>
-<a href="#gallery" data-es="Galería" data-jp="ギャラリー">Galería</a>
-<a href="#video" data-es="Video" data-jp="映像">Video</a>
-<a href="#contact" data-es="Contratar" data-jp="出演依頼">Contacto</a>
+<a href="#about" data-es="Sobre Mi" data-en="About" data-jp="紹介">Sobre</a>
+<a href="#gallery" data-es="Galería" data-en="Gallery" data-jp="ギャラリー">Galería</a>
+<a href="#video" data-es="Video" data-en="Video" data-jp="映像">Video</a>
+<a href="#contact" data-es="Contratar" data-en="Contact" data-jp="出演依頼">Contacto</a>
 </nav>
 
-<button id="langBtn">JP</button>
+<div class="lang-switch">
+<button class="lang-option active" data-lang="es">🇦🇷</button>
+<button class="lang-option" data-lang="en">🇺🇸</button>
+<button class="lang-option" data-lang="jp">🇯🇵</button>
+</div>
+
 <div class="menu-btn" onclick="toggleMenu()">☰</div>
 </header>
 
-<!-- HERO -->
 <section class="hero">
 <video autoplay muted loop playsinline>
 <source src="img/hero.mp4" type="video/mp4">
@@ -39,55 +46,45 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 <div class="overlay">
 <h1>Juan Sebastian Fernandez</h1>
 
-<p id="heroText"
-data-es="MALAMBO · FUSIÓN · ESCENA"
+<p data-es="MALAMBO · FUSIÓN · ESCENA"
+data-en="MALAMBO · FUSION · STAGE"
 data-jp="マランボ · フュージョン · ステージ">
 MALAMBO · FUSIÓN · ESCENA
 </p>
 
-<a href="https://wa.me/5493624652505?text=Hola%20quiero%20información%20sobre%20tu%20show"
-class="cta">BOOK</a>
+<a href="https://wa.me/5493624652505" class="cta">BOOK</a>
 </div>
 </section>
 
 <section id="about" class="section reveal">
-<h2 data-es="SOBRE MÍ" data-jp="プロフィール">SOBRE MÍ</h2>
+<h2 
+data-es="SOBRE MÍ" 
+data-en="ABOUT ME"
+data-jp="プロフィール">SOBRE MÍ</h2>
 
-<p data-es="Artista escénico argentino, nacido en la ciudad de Resistencia, provincia del Chaco. Profesor en Artes con orientación en Danzas Folklóricas Argentinas y Tango, dedicado a la interpretación, creación y enseñanza dentro del lenguaje de la danza tradicional y contemporánea.
+<p 
+data-es="Artista escénico argentino nacido en Resistencia, Chaco. Profesor en Artes con orientación en Danzas Folklóricas Argentinas y Tango. Se desempeñó como docente en la Escuela Municipal de Folklore Huellas Argentinas y dictó seminarios en Perú, Bolivia, Uruguay, Paraguay, Brasil y Japón. Como performer participó en shows en Argentina, Paraguay, Arabia Saudita y Japón, llevando el malambo a escenarios internacionales."
 
-Se desempeñó como docente en la Escuela Municipal de Folklore “Huellas Argentinas” de la ciudad de Resistencia, formando bailarines y compartiendo una mirada actual sobre las raíces culturales argentinas. Ha dictado seminarios y capacitaciones a nivel nacional e internacional en países como Perú, Bolivia, Uruguay, Paraguay, Brasil y Japón.
+data-en="Argentinian fusion performer born in Resistencia, Chaco. Arts professor specialized in Argentine folk dance and tango. Former teacher at Huellas Argentinas Municipal Folklore School and international guest instructor across Peru, Bolivia, Uruguay, Paraguay, Brazil and Japan. As a stage performer, he has presented his work in Argentina, Paraguay, Saudi Arabia and Japan, bringing contemporary malambo to international audiences."
 
-Como performer, ha participado en espectáculos y producciones en escenarios nacionales e internacionales, presentándose en Paraguay, Arabia Saudita y Japón, llevando la fuerza del malambo y la identidad argentina a distintos contextos culturales. Su trabajo se caracteriza por la energía escénica, la precisión rítmica y una búsqueda constante entre tradición y modernidad." 
-data-jp="アルゼンチン・チャコ州レシステンシア出身の舞台芸術家。アルゼンチン民族舞踊およびタンゴを専門とする芸術教師として、伝統と現代性を融合させたダンス表現の創作・指導・パフォーマンス活動を行っている。
-
-レシステンシア市立フォルクローレ学校「Huellas Argentinas」にて講師を務め、アルゼンチン文化のルーツを現代的な視点で伝えてきた。これまでにペルー、ボリビア、ウルグアイ、パラグアイ、ブラジル、日本など国内外でワークショップやセミナーを開催。
-
-パフォーマーとしても国際的に活動し、パラグアイ、サウジアラビア、日本などで公演を行う。力強いマランボのリズム、繊細な表現力、そして伝統とモダンの融合を特徴としている。">
-Artista escénico argentino, nacido en la ciudad de Resistencia, provincia del Chaco. Profesor en Artes con orientación en Danzas Folklóricas Argentinas y Tango, dedicado a la interpretación, creación y enseñanza dentro del lenguaje de la danza tradicional y contemporánea.
-
-Se desempeñó como docente en la Escuela Municipal de Folklore “Huellas Argentinas” de la ciudad de Resistencia, formando bailarines y compartiendo una mirada actual sobre las raíces culturales argentinas. Ha dictado seminarios y capacitaciones a nivel nacional e internacional en países como Perú, Bolivia, Uruguay, Paraguay, Brasil y Japón.
-
-Como performer, ha participado en espectáculos y producciones en escenarios nacionales e internacionales, presentándose en Paraguay, Arabia Saudita y Japón, llevando la fuerza del malambo y la identidad argentina a distintos contextos culturales. Su trabajo se caracteriza por la energía escénica, la precisión rítmica y una búsqueda constante entre tradición y modernidad.
+data-jp="アルゼンチン・チャコ州レシステンシア出身の舞台芸術家。アルゼンチン民族舞踊とタンゴを専門とする芸術教師。国内外（ペルー、ボリビア、ウルグアイ、パラグアイ、ブラジル、日本）でワークショップを開催。パフォーマーとしてアルゼンチン、パラグアイ、サウジアラビア、日本で公演を行う。">
+Artista escénico argentino nacido en Resistencia, Chaco. Profesor en Artes con orientación en Danzas Folklóricas Argentinas y Tango.
 </p>
 </section>
 
 <section id="gallery" class="section reveal">
-<h2 data-es="GALERÍA" data-jp="ギャラリー">GALERÍA</h2>
+<h2 data-es="GALERÍA" data-en="GALLERY" data-jp="ギャラリー">GALERÍA</h2>
 
 <div class="gallery">
 <img src="./img/boleadora1.jpg">
 <img src="./img/boleadora2.jpg">
 <img src="./img/boleadora3.jpg">
 <img src="./img/bombo1.jpg">
-<img src="./img/bombo2.jpg">
-<img src="./img/bombo3.jpg">
-<img src="./img/bombo4.jpg">
-<img src="./img/posemalambo.jpg">
 </div>
 </section>
 
 <section id="video" class="section reveal">
-<h2 data-es="VIDEO" data-jp="映像">VIDEO</h2>
+<h2 data-es="VIDEO" data-en="VIDEO" data-jp="映像">VIDEO</h2>
 
 <iframe 
 src="https://www.youtube.com/embed/rIFrcPLaEk8"
@@ -95,37 +92,13 @@ allowfullscreen>
 </iframe>
 </section>
 
-<section id="reels" class="section reveal">
-<h2 data-es="REELS" data-jp="リール">REELS</h2>
-
-<div class="reel-slider">
-
-<iframe src="https://www.instagram.com/reel/DNyECOM5CFf/embed"></iframe>
-
-<blockquote class="tiktok-embed"
-cite="https://www.tiktok.com/@juanse.fer8/video/7584087394291404039"
-data-video-id="7584087394291404039">
-<a href="https://www.tiktok.com/@juanse.fer8/video/7584087394291404039"></a>
-</blockquote>
-
-</div>
-</section>
-
 <section id="contact" class="section reveal">
-<h2 data-es="CONTACTO" data-jp="連絡先">CONTACTO</h2>
+<h2 data-es="CONTACTO" data-en="CONTACT" data-jp="連絡先">CONTACTO</h2>
 
 <div class="social">
-<a href="https://www.instagram.com/juansebastian.fernandez.581/" target="_blank">
-<i class="fa-brands fa-instagram"></i>
-</a>
-
-<a href="https://www.tiktok.com/@juanse.fer8" target="_blank">
-<i class="fa-brands fa-tiktok"></i>
-</a>
-
-<a href="https://www.facebook.com/juansebastian.fernandez.581" target="_blank">
-<i class="fa-brands fa-facebook"></i>
-</a>
+<a href="https://www.instagram.com/juansebastian.fernandez.581" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+<a href="https://www.tiktok.com/@juanse.fer8" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+<a href="https://www.facebook.com/juansebastian.fernandez.581" target="_blank"><i class="fa-brands fa-facebook"></i></a>
 </div>
 </section>
 
@@ -133,7 +106,6 @@ data-video-id="7584087394291404039">
 <div class="cursor"></div>
 
 <script src="./js/main.js"></script>
-<script async src="https://www.tiktok.com/embed.js"></script>
 
 </body>
 </html>
